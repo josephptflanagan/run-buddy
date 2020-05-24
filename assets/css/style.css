@@ -43,6 +43,22 @@ header nav ul li a{
     font-size: 22px;
  }
 
+.page-title{
+    color: #fce138;
+    border-bottom: 4px solid;
+    border-color: #fce138;
+    padding: 0 80px 15px 80px;
+    font-size: 42px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+       
+}
+
+.page-title h2{
+    display: inline-block;
+
+}
 
 /* body style*/
 body{
@@ -114,7 +130,7 @@ section{
     border-color: #39a6b2;
 }
 
-/*hero*/
+/*homepage hero*/
 .hero {
     background-image:url(../images/hero-bg.jpg);
     height: 600px;
