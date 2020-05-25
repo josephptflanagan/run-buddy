@@ -132,11 +132,23 @@ section{
 
 /*homepage hero*/
 .hero {
-    background-image:url(../images/hero-bg.jpg);
+    background-image:url(../images/flipped-hero-image.jpg);
     height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.hero-cta{
+    color:white;
+    text-align: right;
+    width: 500px
+}
+
+.hero-cta h2{
+    color: #fce138;
+    font-size: 55px;
+    font-style: italic;
 }
 
 .hero-form{
@@ -145,6 +157,7 @@ section{
     width: 500px;
     color: #023e76;
     border:solid 3px #023e76;
+    border-radius: 10px;
     position: absolute;
     bottom: 120px;
     right: 140px;
