@@ -7,16 +7,18 @@
 /*header style*/
 header{
     padding: 20px 35px;
-    background-color: #39a6b2;   
+    background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*header style h1*/
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
-    display: inline;
 }
 
 /*header style a */
@@ -27,7 +29,6 @@ header a {
 
 /*header style nav */
 header nav {
-    float: right;
     margin: 7px 0;
  }
 
@@ -283,6 +284,10 @@ section{
 
 .contact-info a{
     color: #fce138;
+}
+
+.contact-form{
+    
 }
 
 /*footer style*/
