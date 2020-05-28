@@ -11,6 +11,13 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-image:url(../images/flipped-hero-image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 /*header style h1*/
@@ -46,6 +53,13 @@ header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+ }
+
+ header nav ul li a:hover{
+     background: #fce138;
+     color: #024e76;
+     border-radius: 15px;
+     text-shadow: none;
  }
 
 .page-title{
@@ -90,11 +104,15 @@ body{
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child{
+    border-bottom: none;
 }
 
 .step h3{
@@ -160,7 +178,8 @@ section{
 .hero {
     background-image:url(../images/flipped-hero-image.jpg);
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -185,13 +204,14 @@ section{
 }
 
 .hero-form{
-    background-color: #fce138;
+    background-color: rgba(252, 225,56, .8);
     padding: 20px;
     color: #023e76;
     border:solid 3px #023e76;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
 
 .hero-form h3{
@@ -211,6 +231,13 @@ section{
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus{
+    background-color: rgba(255,255,255, 1);
+    outline:none;
 }
 
 .hero-form label{
@@ -223,6 +250,11 @@ section{
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
+}
+
+.hero-form button:hover{
+    background-color: #39a6b2;
 }
 
 /*trainers*/
@@ -375,6 +407,13 @@ section{
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    background-color: rgba(255,255,255, 1);
+    outline: none;
 }
 
 .contact-form button{
@@ -385,6 +424,12 @@ section{
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover{
+    color: #fce138;
+    background: #39a6b2;
 }
 
 /*footer style*/
@@ -421,6 +466,7 @@ footer a{
     header{
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1{
