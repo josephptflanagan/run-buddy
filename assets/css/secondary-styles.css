@@ -1,7 +1,8 @@
 /*secondary page hero*/
 .hero {
     height: auto;
-    background-position: bottom;
+    background-attachment: fixed;
+    background-position: 80%;
     margin-bottom: 40px;
 }
 
